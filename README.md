@@ -2,6 +2,12 @@
 
 Utilizando Node.js e Express retorne uma página estática que contenha uma lista dos personagens de Rick e Morty com os seguintes atributos: `nome, gênero, status, quantidade de aparições em cada uma das temporadas e aparições no total`, os personagens devem ser lidos a partir do arquivo: `characters.json`.
 
+## Como utilizar esse projeto:
+  - Faça um clone do repositório
+  - Faça o comando npm install para instalar as depedencias
+  - Para rodar o projeto, utilize o comando npm start
+  - Url para acessar o projeto: http://localhost:3000/ 
+
 ## Considerações:
 
 - Devem ser listados somentes os personagens vivos
