@@ -16,6 +16,16 @@ export const home = (req, res) =>{
         secondSeason = [];
         thirdSeason = [];
 
+        if(char.gender == "Male"){
+            char.gender = "Masculino";
+        }else if(char.gender == "Female"){
+            char.gender = "Feminino";
+        }else{
+            char.gender = "Desconhecido";
+        }
+
+        char.status = "Vivo";
+
         char.episode.forEach(function(episode){
             let number = parseInt(episode.replace(/[^0-9]/g,''));
 

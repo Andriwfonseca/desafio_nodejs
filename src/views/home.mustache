@@ -1,24 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <title>Rick and Morty</title>
 </head>
 
 <body>
-    <h1>Personagens</h1>
-
-    <ul>
+    <h2 class="title">Personagens</h2>
+    <div class="cards">
         {{#characters}}
-        <li>{{name}}</li>
-        <li>Visto por último em: {{location.name}}</li>
-        <li>Gênero: {{gender}}</li>
-        <li>Aparições na 1º temporada: {{firstSeason}}</li>
-        <li>Aparições na 1º temporada: {{secondSeason}}</li>
-        <li>Aparições na 1º temporada: {{thirdSeason}}</li>
-        <li>Aparições no total: {{episode.length}}</li>
-        <li>{{status}}</li>
-        {{/characters}}
-    </ul>
+
+        <div class="card-character">
+            <img src="{{image}}" alt="Imagem do personagem">
+
+            <p class="char-name">{{name}}</p>
+
+            <div class="char-info">
+                <span class="char-title">Visto por último em: </span>
+                <span class="char-info-value">{{location.name}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Gênero: </span>
+                <span class="char-info-value">{{gender}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Aparições na 1ª temporada: </span>
+                <span class="char-info-value">{{firstSeason}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Aparições na 2ª temporada: </span>
+                <span class="char-info-value">{{secondSeason}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Aparições na 3ª temporada: </span>
+                <span class="char-info-value">{{thirdSeason}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Aparições no total: </span>
+                <span class="char-info-value">{{episode.length}}</span>
+            </div>
+
+            <div class="char-info">
+                <span class="char-title">Status: </span>
+                <span class="char-info-value">{{status}}</span>
+            </div>
+
+        </div>
+
+         {{/characters}}
+    </div>
 </body>
 
 </html>
