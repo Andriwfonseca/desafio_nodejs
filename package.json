@@ -1,0 +1,30 @@
+{
+  "name": "desafio_nodejs",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "description": "Utilizando Node.js e Express retorne uma página estática que contenha uma lista dos personagens de Rick e Morty com os seguintes atributos: `nome, gênero, status, quantidade de aparições em cada uma das temporadas e aparições no total`, os personagens devem ser lidos a partir do arquivo: `characters.json`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r -e js,json,mustache esm src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andriwfonseca/desafio_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andriwfonseca/desafio_nodejs/issues"
+  },
+  "homepage": "https://github.com/Andriwfonseca/desafio_nodejs#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.3",
+    "mustache-express": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mustache-express": "^1.2.1"
+  }
+}
