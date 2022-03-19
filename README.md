@@ -1,4 +1,4 @@
-# Teste desenvolvedor JR.
+# Teste desenvolvedor JR para treinar meus conhecimentos em Node JS.
 
 Utilizando Node.js e Express retorne uma página estática que contenha uma lista dos personagens de Rick e Morty com os seguintes atributos: `nome, gênero, status, quantidade de aparições em cada uma das temporadas e aparições no total`, os personagens devem ser lidos a partir do arquivo: `characters.json`.
 
@@ -24,4 +24,4 @@ Irá ser avaliado: Seu conhecimento técnico, sua habilidade para resolver probl
 
 Quanto ao design fique livre para criar, no entanto todos os dados devem ser exibidos conforme é mostrado no seguinte exemplo:
 
-![alt text](/example.png)
+![alt text](/public/images/example.png)
