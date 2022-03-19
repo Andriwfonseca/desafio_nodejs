@@ -1,21 +1,24 @@
 <html>
+
 <head>
     <title>Rick and Morty</title>
 </head>
+
 <body>
     <h1>Personagens</h1>
-   
+
     <ul>
-        {{#characters}}                   
-            <li>{{name}}</li>
-            <li>Visto por último em: {{location.name}}</li>
-            <li>Gênero: {{gender}}</li>
-            <li>Aparições na 1º temporada: {{firstSeason}}</li>
-            <li>Aparições na 1º temporada: {{secondSeason}}</li>
-            <li>Aparições na 1º temporada: {{thirdSeason}}</li>
-            <li>Aparições no total: {{episode.length}}</li>
-            <li>{{status}}</li>
-        {{/characters}}  
+        {{#characters}}
+        <li>{{name}}</li>
+        <li>Visto por último em: {{location.name}}</li>
+        <li>Gênero: {{gender}}</li>
+        <li>Aparições na 1º temporada: {{firstSeason}}</li>
+        <li>Aparições na 1º temporada: {{secondSeason}}</li>
+        <li>Aparições na 1º temporada: {{thirdSeason}}</li>
+        <li>Aparições no total: {{episode.length}}</li>
+        <li>{{status}}</li>
+        {{/characters}}
     </ul>
 </body>
+
 </html>

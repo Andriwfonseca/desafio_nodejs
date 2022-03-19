@@ -35,7 +35,26 @@ export const home = (req, res) =>{
         char.secondSeason = secondSeason.length;
         char.thirdSeason = thirdSeason.length;
     });
- 
+    
+    function order( a, b ) {
+        if ( a.episode.length > b.episode.length ){
+          return -1;
+        }
+        if ( a.episode.length < b.episode.length ){
+          return 1;
+        }else{
+            if ( a.name < b.name ){
+                return -1;
+            }
+            if ( a.name > b.name ){
+                return 1;
+            }
+            return 0;
+        }
+    }
+
+    charactersAlive.sort(order);   
+    
     res.render('home',{
         "characters": charactersAlive
     });
