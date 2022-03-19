@@ -4,7 +4,7 @@ Utilizando Node.js e Express retorne uma página estática que contenha uma list
 
 ## Como utilizar esse projeto:
   - Faça um clone do repositório
-  - Faça o comando npm install para instalar as depedencias
+  - Faça o comando npm install para instalar as dependências
   - Para rodar o projeto, utilize o comando npm start
   - Url para acessar o projeto: http://localhost:3000/ 
 
