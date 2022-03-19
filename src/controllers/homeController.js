@@ -3,7 +3,7 @@ import characters from "../../public/data/characters.json"
 export const home = (req, res) =>{
 
     let charactersAlive = characters.filter(function(char){  
-            return char.status == "Alive";
+        return char.status == "Alive";
     });
 
     let firstSeason = [];
